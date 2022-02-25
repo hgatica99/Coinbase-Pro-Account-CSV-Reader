@@ -1,4 +1,3 @@
-import csv
 from csv_reader import CSV_Reader
 import pprint
 
@@ -8,10 +7,10 @@ import pprint
 ## Its beyond the tenths place but since this is to help with taxes, please be aware of this slight difference
 ## I haven't checked if everything is rounded the same but I assume so.
 
-pp = pprint.PrettyPrinter(indent=4, sort_dicts=False)
-
 # EXAMPLE USES PROVIDED BELOW
 # Numbers are not rounded to retain exact info as close as possible for tax purposes
+
+pp = pprint.PrettyPrinter(indent=4, sort_dicts=False)
 
 CSV_PATH = 'USER COINBASE PRO ACCOUNT CSV PATH'
 
@@ -38,10 +37,10 @@ usd_bought = csv_reader.get_total_unit_bought(transactions=transactions, symbol=
 # Fees usually associated with buying cryptos via USD
 usd_fees = csv_reader.get_total_unit_fees(transactions=transactions, symbol='USD')
 
-# How much USD I deposited in 2021
+# How much USD I deposited
 usd_deposited = csv_reader.get_total_unit_deposited(transactions=transactions, symbol='USD')
 
-# How much USD I withdrew in 2021
+# How much USD I withdrew
 usd_withdrawn = csv_reader.get_total_unit_withdrawn(transactions=transactions, symbol='USD')
 
 # This will return a list of strings of all unique symbols within the csv file in alphabetical order
