@@ -1,0 +1,2 @@
+# Coinbase Pro Account CSV Reader
+ This is currently a basic OOP program designed to analyze the accout.csv data provided by Coinbase Pro using pandas. I wrote this as a way to figure out what were my transactions, and to present the data in a way that's easier to read and manipulate. I'm not sure how complicated I inted to make this program but I can already see what I can add, and improve, to make getting info for taxes easier.
